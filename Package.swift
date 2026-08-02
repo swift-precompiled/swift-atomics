@@ -18,8 +18,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "_AtomicsShims",
-            url: "https://github.com/swift-precompiled/swift-atomics/releases/download/1.3.1/_AtomicsShims-fe1082fa4483ab21b396e8c0be1c2c151ce2d2e5b977f1062b937fc01d51df28.xcframework.zip",
-            checksum: "fe1082fa4483ab21b396e8c0be1c2c151ce2d2e5b977f1062b937fc01d51df28"
+            url: "https://github.com/swift-precompiled/swift-atomics/releases/download/1.3.1/_AtomicsShims-e433a686c778dde242be5c4f914dcb2e9b0b70494c25d18787ca8458e9f0d646.xcframework.zip",
+            checksum: "e433a686c778dde242be5c4f914dcb2e9b0b70494c25d18787ca8458e9f0d646"
         ),
         .target(
             name: "Atomics_Aggregation",
@@ -27,8 +27,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "Atomics",
-            url: "https://github.com/swift-precompiled/swift-atomics/releases/download/1.3.1/Atomics-236a69afe51f6632c413ae3a888e2a62174636106cd73508eea40d4a4e907330.xcframework.zip",
-            checksum: "236a69afe51f6632c413ae3a888e2a62174636106cd73508eea40d4a4e907330"
+            url: "https://github.com/swift-precompiled/swift-atomics/releases/download/1.3.1/Atomics-2d70feea3490daca49605bbcc5804432b7fee15884ac9e10a33f127f01ffd92e.xcframework.zip",
+            checksum: "2d70feea3490daca49605bbcc5804432b7fee15884ac9e10a33f127f01ffd92e"
         )
     ]
 )
