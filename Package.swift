@@ -8,7 +8,7 @@ let package = Package(
     products: [
         .library(
             name: "Atomics",
-            targets: ["Atomics_Aggregation"]
+            targets: ["Atomics_PrecompiledProduct"]
         )
     ],
     targets: [
@@ -19,18 +19,22 @@ let package = Package(
         ),
         .binaryTarget(
             name: "_AtomicsShims",
-            url: "https://github.com/swift-precompiled/swift-atomics/releases/download/1.3.1/_AtomicsShims-4096f9493237451bcd3e454d361c890272b4e588ceed6e49204a0573b2f07e04.xcframework.zip",
-            checksum: "4096f9493237451bcd3e454d361c890272b4e588ceed6e49204a0573b2f07e04"
+            url: "https://github.com/swift-precompiled/swift-atomics/releases/download/1.3.1/_AtomicsShims-6b18d543dca59fd236428e232edfe8145a34db6edaa347446900e4f5aac478db.xcframework.zip",
+            checksum: "6b18d543dca59fd236428e232edfe8145a34db6edaa347446900e4f5aac478db"
         ),
         .target(
             name: "Atomics_Aggregation",
-            dependencies: ["Atomics", "_AtomicsShims_Aggregation"],
+            dependencies: ["Atomics"],
             swiftSettings: [.define("SCIPIO_PRECOMPILED_BINARY_WRAPPER")]
         ),
         .binaryTarget(
             name: "Atomics",
-            url: "https://github.com/swift-precompiled/swift-atomics/releases/download/1.3.1/Atomics-c363baba468e29cdcbbb93c3720f5393bfdc9f28e3dba1481b8b4627acb2234a.xcframework.zip",
-            checksum: "c363baba468e29cdcbbb93c3720f5393bfdc9f28e3dba1481b8b4627acb2234a"
+            url: "https://github.com/swift-precompiled/swift-atomics/releases/download/1.3.1/Atomics-501c7478a4622b670d4e00ad59d7904bee4cae80c9e728cca960f821d9c17087.xcframework.zip",
+            checksum: "501c7478a4622b670d4e00ad59d7904bee4cae80c9e728cca960f821d9c17087"
+        ),
+        .target(
+            name: "Atomics_PrecompiledProduct",
+            dependencies: ["Atomics_Aggregation", "_AtomicsShims_Aggregation"]
         )
     ]
 )
