@@ -29,8 +29,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "Atomics",
-            url: "https://github.com/swift-precompiled/swift-atomics/releases/download/1.3.1/Atomics-c363baba468e29cdcbbb93c3720f5393bfdc9f28e3dba1481b8b4627acb2234a.xcframework.zip",
-            checksum: "c363baba468e29cdcbbb93c3720f5393bfdc9f28e3dba1481b8b4627acb2234a"
+            url: "https://github.com/swift-precompiled/swift-atomics/releases/download/1.3.1/Atomics-84dcd2aa88abe8fde3627e69fd90ddb869a8e9d86cb2920b9537d0b4b010e662.xcframework.zip",
+            checksum: "84dcd2aa88abe8fde3627e69fd90ddb869a8e9d86cb2920b9537d0b4b010e662"
         )
     ]
 )
